@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Netflix</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+<link rel="stylesheet" href="JS/index.js">
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<!-- header -->
+<header>
+      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#"><P>NETFLIX</P></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Recently Add</a></li>
+              <li><a href="#">My List</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
+              <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="/action_page.php">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/slide/1.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="assets/slide/2.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="assets/slide/3.jpg" alt="New York">
+    </div>
+    <div class="item">
+      <img src="assets/slide/4.jpg" alt="New York">
+    </div>
+    <div class="item">
+      <img src="assets/slide/5.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  <!-- Action movie -->
+  <div class="container-fluid">
+    <h3>Phim Hành Động</h3> <br>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1.jpg" alt="">
+      <h4>Super Girl</h4>
+          <div class="d-g">
+            <div class="left-icon">
+              <span class="glyphicon glyphicon-play"></span>
+              <span class="glyphicon glyphicon-ok"></span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+            </div>
+            <div class="right-icon">
+              <div class="right-icon">
+                <span class="glyphicon glyphicon-ok-circle"></span>
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1-2.png" alt=""><br>
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <div class="right-icon">
+            <span class="glyphicon glyphicon-ok-circle"></span>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1-3.png" alt="">
+      <h4>Olympus Has Fallen</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <div class="right-icon">
+            <span class="glyphicon glyphicon-ok-circle"></span>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1-4.png" alt="">
+      <h4>Oblivion</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <div class="right-icon">
+            <span class="glyphicon glyphicon-ok-circle"></span>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1-5.png" alt="">
+      <h4>Fast and Furious</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <div class="right-icon">
+            <span class="glyphicon glyphicon-ok-circle"></span>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/action movie/1-6.png" alt="">
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <!-- Action movie -->
+  <div class="container-fluid">
+    <h3>Phim Chiếu Rạp</h3> <br>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/1.png" alt="">
+      <h4>Iron Man 3</h4>
+
+        <div class="d-g">
+          <div class="left-icon">
+            <span class="glyphicon glyphicon-play"></span>
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+          </div>
+          <div class="right-icon">
+            <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/2.png" alt=""><br>
+      <h4>Iron Man 3</h4>
+
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/3.png" alt="">
+      <h4>Olympus Has Fallen</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/4.png" alt="">
+      <h4>Oblivion</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/5.png" alt="">
+      <h4>Fast and Furious</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/new phim/6.jpg" alt="">
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <!-- Netflix movie -->
+  <div class="container-fluid">
+    <h3>Phim Trên Netflix</h3> <br>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/1.png" alt="">
+      <h4>Iron Man 3</h4>
+
+          <div class="d-g">
+            <div class="left-icon">
+              <span class="glyphicon glyphicon-play"></span>
+              <span class="glyphicon glyphicon-ok"></span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+            </div>
+            <div class="right-icon">
+              <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/2.png" alt=""><br>
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/3.png" alt="">
+      <h4>Olympus Has Fallen</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/4.png" alt="">
+      <h4>Oblivion</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/5.png" alt="">
+      <h4>Fast and Furious</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/netflix/6.jpg" alt="">
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <!-- Action movie -->
+  <div class="container-fluid">
+    <h3>Anime</h3> <br>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/1 (1).jpg" alt="">
+      <h4>Iron Man 3</h4>
+
+          <div class="d-g">
+            <div class="left-icon">
+              <span class="glyphicon glyphicon-play"></span>
+              <span class="glyphicon glyphicon-ok"></span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+            </div>
+            <div class="right-icon">
+              <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/2.jpg" alt=""><br>
+      <h4>Iron Man 3</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/3.png" alt="">
+      <h4>Olympus Has Fallen</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/4.png" alt="">
+      <h4>Oblivion</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/5.png" alt="">
+      <h4>Fast and Furious</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <img src="assets/anime/6.png" alt="">
+      <h4>Fast and Furious</h4>
+      <div class="d-g">
+        <div class="left-icon">
+          <span class="glyphicon glyphicon-play"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </div>
+        <div class="right-icon">
+          <span class="glyphicon glyphicon-ok-circle"></span>
+          <span class="glyphicon glyphicon-exclamation-sign"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-icons">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <span><ion-icon name="logo-facebook"></ion-icon></span>
+      <span><ion-icon name="logo-instagram"></ion-icon></span>
+      <span><ion-icon name="logo-twitter"></ion-icon></span>
+      <span><ion-icon name="logo-youtube"></ion-icon></span>
+    </div>
+  </div>
+  <br>
+</footer>
+<div class="footer-content">
+  <div class="col-md-2 col-sm-4 col-xs-6">
+    <div class="left">
+      <p>Audio and Subtitles</p><br>
+      <p>Media Center</p><br>
+      <p>Privacy</p> <br>
+      <p>Contact Us</p>
+    
+    </div>
+    <div class="mid">
+      <p>Audio Description</p><br>
+      <p>Investor Relation</p><br>
+      <p>Help Center</p><br>
+      <p>Cookie Preference</p>
+    </div>
+    <div class="right">
+      <p>Job</p> <br>
+      <p>Terms Of Use</p>
+    </div>
+  </div>
+</div>
+<!-- scroll to top -->
+
+<a href=""><span onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="icon-button" class="glyphicon glyphicon-upload"></span></a>
+
+</html>
